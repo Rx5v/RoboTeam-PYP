@@ -4,19 +4,20 @@ html{
 *{
     padding: 0;
     margin: 0;
+    
 }
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    color: #fc00ff;
-    /* margin-left: 80%; */
+    
+    
   }
   
   .navbar{
     height: 15vh;
     width: 100%;
+    background-color: rgb(202, 194, 194);
   }
   .navbar li {
     float: left;
@@ -32,7 +33,6 @@ html{
   .jumbotron{
     height: 100vh;
     width: 100%;
-    overflow: hidden;
     top: 0;
     bottom: 0;
     right: 0;
@@ -62,4 +62,125 @@ html{
     position: absolute;
     margin-top: -70vh;
     margin-left: 68%;
+  }
+  .btn-content{
+    margin-left: 10vh;
+    margin-top: 5vh;
+    /* width: 40vh; */
+    transform: skewY(6deg);
+    display: flex;
+    flex-direction: row;
+  }
+  .right-btn a{
+    color: whitesmoke;
+  }
+  .left-btn a{
+    color: #3893E7;
+  }
+  
+  .left-btn{
+    text-align: center;
+    width: 20vh;
+    padding: 2vh 3vh;
+    border-radius: 25vh;
+    background:whitesmoke;
+  }
+  .right-btn{
+    margin-left: 10vh;
+    text-align: center;
+    width: 20vh;
+    padding: 2vh 3vh;
+    border-radius: 25vh;
+    border:0.5vh solid whitesmoke;
+  }
+  .box {
+    text-align: center;
+    float: left;
+    width: 240px;
+    height: 300px;
+    margin: 3%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+.box-content {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 4%;
+  display: flex;
+  flex-direction: row;
+  clear: both;
+  text-align: center;
+}
+.box-image {
+  margin-top: 6%;
+}
+.title-box {
+  margin-top: 6%;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.description-box {
+  padding: 20px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vh;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.container{
+  text-align: center;
+}
+.content-body{
+  text-align: center;
+}
+  @media (min-width:360px) and (max-width:565px){
+    .img{
+      margin-left: -10vh;
+      visibility:hidden
+    }
+    .text{
+      margin-left: 0;
+      text-align: center;
+    }
+    .text h1{
+      padding-bottom: 2vh;
+      font-size: 7vh;
+      
+    }
+    .btn-content{
+      display: flex;
+      flex-direction: column;
+      margin-left: inherit;
+    }
+    .right-btn{
+      width: 40vh;
+      margin-top: 2vh;
+      margin-left: 0vh;
+    }
+    .left-btn{
+      width: 40vh;
+      margin-top: 2vh;
+      margin-left: 0vh;
+    }
+    .box-content{
+      display: flex;
+      flex-direction: column;
+    }
+    .navbar{
+      position: relative;
+    }
+    .navbar-collapse{
+      position: relative;
+      background-color: #f8f9fa;
+      height: 30vh;
+    }
+    
   }
